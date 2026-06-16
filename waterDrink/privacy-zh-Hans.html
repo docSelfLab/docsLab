@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="zh-Hans">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>喝水侠 · 隐私政策</title>
+  <style>
+    :root {
+      color-scheme: light;
+      --text: #1a2332;
+      --muted: #5b6678;
+      --accent: #1d6fd8;
+      --border: #e4eaf2;
+      --bg: #f7f9fc;
+      --card: #ffffff;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Helvetica Neue", sans-serif;
+      line-height: 1.7;
+      color: var(--text);
+      background: var(--bg);
+    }
+    main {
+      max-width: 720px;
+      margin: 0 auto;
+      padding: 32px 20px 64px;
+    }
+    .card {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      padding: 28px 24px;
+      box-shadow: 0 8px 24px rgba(29, 111, 216, 0.06);
+    }
+    h1 {
+      margin: 0 0 8px;
+      font-size: 1.75rem;
+      line-height: 1.3;
+    }
+    .meta {
+      color: var(--muted);
+      font-size: 0.95rem;
+      margin-bottom: 24px;
+    }
+    .meta p { margin: 4px 0; }
+    h2 {
+      margin: 28px 0 12px;
+      font-size: 1.125rem;
+    }
+    p, li { font-size: 1rem; }
+    ul, ol { padding-left: 1.25rem; }
+    li + li { margin-top: 8px; }
+    strong { font-weight: 600; }
+    code {
+      font-size: 0.9em;
+      background: #eef3fa;
+      padding: 2px 6px;
+      border-radius: 4px;
+    }
+    .lang {
+      margin-top: 32px;
+      padding-top: 20px;
+      border-top: 1px solid var(--border);
+      color: var(--muted);
+      font-size: 0.9rem;
+    }
+    .lang a {
+      color: var(--accent);
+      text-decoration: none;
+      margin-right: 12px;
+    }
+    .lang a:hover { text-decoration: underline; }
+  </style>
+</head>
+<body>
+  <main>
+    <article class="card">
+      <h1>喝水侠 · 隐私政策</h1>
+      <div class="meta">
+        <p><strong>生效日期：</strong>2026年6月16日</p>
+        <p><strong>运营主体：</strong>王亚博（以下简称“我们”）</p>
+        <p><strong>联系方式：</strong><a href="mailto:support@selflab.app">support@selflab.app</a></p>
+      </div>
+
+      <p>喝水侠（以下简称“本应用”）重视你的隐私。本隐私政策说明我们如何收集、使用、存储和保护你的信息。</p>
+
+      <h2>1. 我们收集的信息</h2>
+      <p>根据当前版本（v1.0）功能，我们主要处理以下信息：</p>
+      <ol>
+        <li><strong>本地记录数据（设备本地）</strong>
+          <ul>
+            <li>饮水记录（时间、容量、饮品类型等）</li>
+            <li>每日目标、提醒时间、引导完成状态等偏好设置</li>
+          </ul>
+        </li>
+        <li><strong>HealthKit 数据（仅在你授权后）</strong>
+          <ul>
+            <li>读取/写入饮水相关数据，用于展示与同步你的饮水进度</li>
+          </ul>
+        </li>
+        <li><strong>通知权限状态</strong>
+          <ul>
+            <li>用于每天定时本地提醒喝水（非远程推送）</li>
+          </ul>
+        </li>
+        <li><strong>内购相关状态（StoreKit）</strong>
+          <ul>
+            <li>月订阅、年订阅或买断 Pro 权益状态、购买与恢复结果（支付由 Apple 处理）</li>
+          </ul>
+        </li>
+        <li><strong>小组件共享数据（仅在你添加主屏幕小组件后，设备本地）</strong>
+          <ul>
+            <li>通过 Apple App Group（<code>group.com.selflab.watertrack</code>）在主应用与小组件扩展之间共享今日饮水汇总（当日饮水量、目标值、更新时间）</li>
+            <li>该数据仅保存在你的设备上，<strong>不上传至我们的服务器</strong></li>
+          </ul>
+        </li>
+      </ol>
+      <p>我们<strong>不要求注册账号</strong>，当前版本也<strong>不主动收集你的姓名、手机号、身份证号等直接身份信息</strong>。我们<strong>不使用第三方广告或分析 SDK</strong>。</p>
+
+      <h2>2. 我们如何使用信息</h2>
+      <p>我们仅将相关信息用于：</p>
+      <ul>
+        <li>提供和维护喝水记录、统计和提醒功能；</li>
+        <li>在你授权时与 Apple Health 同步饮水数据；</li>
+        <li>向 Pro 用户提供主屏幕小组件展示今日饮水进度；</li>
+        <li>提供 Pro 功能权益识别、购买和恢复购买；</li>
+        <li>排查故障并提升稳定性。</li>
+      </ul>
+
+      <h2>3. 权限与系统能力说明</h2>
+      <ul>
+        <li><strong>HealthKit：</strong>仅在你授权后读写饮水数据。拒绝授权时，本地记录仍可使用。</li>
+        <li><strong>通知：</strong>用于定时本地提醒喝水。拒绝授权时，你仍可手动记录。</li>
+        <li><strong>StoreKit（内购）：</strong>支付流程由 Apple 完成，我们不保存你的银行卡等支付信息。</li>
+        <li><strong>WidgetKit / App Group：</strong>仅在你主动添加小组件后，在设备本地于主应用与小组件之间同步饮水汇总快照，不涉及网络传输。</li>
+      </ul>
+
+      <h2>4. 数据存储与安全</h2>
+      <ul>
+        <li>当前版本主要使用设备本地存储（SwiftData / UserDefaults / App Group 共享容器）。</li>
+        <li>我们不运营自有后端服务器存储你的饮水记录。</li>
+        <li>我们采取合理措施保护数据安全，但任何系统都无法保证 100% 绝对安全。</li>
+      </ul>
+
+      <h2>5. 第三方服务</h2>
+      <p>当前版本涉及的 Apple 平台能力：</p>
+      <ul>
+        <li><strong>Apple HealthKit</strong>（健康数据读写，需你授权）</li>
+        <li><strong>Apple StoreKit / App Store</strong>（支付与订阅）</li>
+        <li><strong>Apple UserNotifications</strong>（本地通知）</li>
+        <li><strong>Apple WidgetKit</strong>（主屏幕小组件，Pro 功能）</li>
+      </ul>
+      <p>除实现上述功能所必需外，我们不会出售你的个人信息。</p>
+
+      <h2>6. 未成年人</h2>
+      <p>本应用不面向 13 岁以下儿童。若你是未成年人，请在监护人指导下使用。</p>
+
+      <h2>7. 你的权利</h2>
+      <p>你可通过以下方式管理数据：</p>
+      <ul>
+        <li>在 iOS「设置」中关闭 HealthKit 或通知权限；</li>
+        <li>移除主屏幕小组件以停止 App Group 内的小组件数据展示；</li>
+        <li>卸载应用以移除本地饮水记录与偏好设置（受 iOS 机制影响）；</li>
+        <li>已同步至 Apple Health 的数据，请在 iOS「健康」App 中自行查看或管理。</li>
+      </ul>
+      <p>当前版本<strong>不提供单条饮水记录删除入口</strong>；卸载应用是移除本地数据的主要方式。</p>
+
+      <h2>8. 政策变更</h2>
+      <p>我们可能根据功能或法规更新本政策。重大变更将通过应用内或网站公告提示。</p>
+
+      <h2>9. 联系我们</h2>
+      <p>如有隐私问题，请联系：</p>
+      <p><strong>邮箱：</strong><a href="mailto:support@selflab.app">support@selflab.app</a><br/>
+      <strong>地址：</strong>[联系地址]</p>
+
+      <h2>10. 免责说明</h2>
+      <p>本应用为健康习惯管理工具，不提供医疗建议，也不替代专业诊疗意见。</p>
+
+      <div class="lang">
+        <span>其他语言：</span>
+        <a href="privacy-en.html">English</a>
+        <a href="privacy-zh-Hant.html">繁體中文</a>
+      </div>
+    </article>
+  </main>
+</body>
+</html>
