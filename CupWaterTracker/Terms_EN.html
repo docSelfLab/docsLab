@@ -1,144 +1,184 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8"/>
-  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Cup Water Track · Terms of Service</title>
   <style>
     :root {
-      color-scheme: light;
-      --text: #1a2332;
-      --muted: #5b6678;
-      --accent: #1d6fd8;
-      --border: #e4eaf2;
-      --bg: #f7f9fc;
-      --card: #ffffff;
+      color-scheme: light dark;
+      --text: #1a1a1a;
+      --muted: #555;
+      --link: #0066cc;
+      --border: #e5e5e5;
+      --bg: #fff;
+    }
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --text: #f0f0f0;
+        --muted: #aaa;
+        --link: #6eb6ff;
+        --border: #333;
+        --bg: #111;
+      }
     }
     * { box-sizing: border-box; }
     body {
-      margin: 0;
-      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Helvetica Neue", sans-serif;
-      line-height: 1.7;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      line-height: 1.65;
       color: var(--text);
       background: var(--bg);
-    }
-    main {
       max-width: 720px;
       margin: 0 auto;
-      padding: 32px 20px 64px;
-    }
-    .card {
-      background: var(--card);
-      border: 1px solid var(--border);
-      border-radius: 16px;
-      padding: 28px 24px;
-      box-shadow: 0 8px 24px rgba(29, 111, 216, 0.06);
+      padding: 2rem 1.25rem 3rem;
     }
     h1 {
-      margin: 0 0 8px;
       font-size: 1.75rem;
-      line-height: 1.3;
+      font-weight: 700;
+      margin: 0 0 0.5rem;
+      line-height: 1.25;
     }
     .meta {
       color: var(--muted);
       font-size: 0.95rem;
-      margin-bottom: 24px;
+      margin-bottom: 2rem;
     }
-    .meta p { margin: 4px 0; }
     h2 {
-      margin: 28px 0 12px;
       font-size: 1.125rem;
+      font-weight: 600;
+      margin: 2rem 0 0.75rem;
     }
-    p, li { font-size: 1rem; }
-    ul { padding-left: 1.25rem; }
-    li + li { margin-top: 8px; }
-    strong { font-weight: 600; }
-    a { color: var(--accent); }
-    .lang {
-      margin-top: 32px;
-      padding-top: 20px;
+    p, ul { margin: 0.75rem 0; }
+    ul { padding-left: 1.5rem; }
+    li { margin: 0.35rem 0; }
+    a { color: var(--link); }
+    hr {
+      border: none;
       border-top: 1px solid var(--border);
-      color: var(--muted);
-      font-size: 0.9rem;
+      margin: 2rem 0;
     }
-    .lang a {
-      color: var(--accent);
-      text-decoration: none;
-      margin-right: 12px;
-    }
-    .lang a:hover { text-decoration: underline; }
   </style>
 </head>
 <body>
-  <main>
-    <article class="card">
-      <h1>Cup Water Track · Terms of Service</h1>
-      <div class="meta">
-        <p><strong>Effective Date:</strong> June 16, 2026</p>
-        <p><strong>Operator:</strong> wangyabo</p>
-      </div>
 
-      <p>Welcome to Cup Water Track (also known as <strong>喝水侠</strong> in Chinese locales, the "App"). By downloading, installing, or using the App, you agree to this Terms of Service.</p>
+  <h1>Cup Water Track · Terms of Service</h1>
+  <p class="meta">
+    <strong>Effective Date:</strong> June 16, 2026<br>
+    <strong>Operator:</strong> wangyabo
+  </p>
 
-      <h2>1. Services</h2>
-      <p>The App provides hydration logging, daily goals, local scheduled reminders, statistics, optional Apple Health sync, a Home Screen widget for Pro users, and Pro features available via Apple in-app purchase (smart reminders, HealthKit sync, widgets, and deeper trends).</p>
+  <p>
+    Welcome to Cup Water Track (also known as <strong>喝水侠</strong> in Chinese locales, the "App").
+    By downloading, installing, or using the App, you agree to these Terms of Service.
+  </p>
 
-      <h2>2. Account and Device</h2>
-      <ul>
-        <li>Core features are available without creating an account.</li>
-        <li>You are responsible for ensuring your device meets the requirements (iOS 17.0 or later).</li>
-      </ul>
+  <h2>1. Services</h2>
+  <p>
+    The App provides hydration logging, daily goals, local scheduled reminders, statistics,
+    optional Apple Health sync, a Home Screen widget for Pro users, and Pro features available
+    via Apple in-app purchase (smart reminders, HealthKit sync, widgets, and deeper trends).
+  </p>
 
-      <h2>3. Acceptable Use</h2>
-      <p>You agree not to:</p>
-      <ul>
-        <li>Interfere with normal operation of the App;</li>
-        <li>Reverse engineer, tamper with, or exploit vulnerabilities;</li>
-        <li>Use the App for unlawful or infringing activities.</li>
-      </ul>
+  <h2>2. Account and Device</h2>
+  <ul>
+    <li>Core features are available without creating an account.</li>
+    <li>You are responsible for ensuring your device meets the requirements (iOS 17.0 or later).</li>
+  </ul>
 
-      <h2>4. Subscriptions and In-App Purchases</h2>
-      <ul>
-        <li>Some features are <strong>Cup Water Track Pro</strong> features, available via Apple in-app purchase, including <strong>monthly subscription, yearly subscription, or one-time lifetime purchase</strong> (as shown in the App).</li>
-        <li>Subscriptions automatically renew unless you turn off auto-renew at least 24 hours before the end of the current period in your Apple account subscription settings.</li>
-        <li>Renewal charges are billed to your Apple account within 24 hours before the current period ends.</li>
-        <li>Billing, renewal, cancellation, and refunds are subject to <a href="https://www.apple.com/legal/internet-services/itunes/">Apple Media Services Terms</a> and applicable law.</li>
-        <li>You can manage or cancel subscriptions in iOS Settings → Apple Account → Subscriptions.</li>
-        <li>You may restore prior Pro purchases in the App using the same Apple ID.</li>
-      </ul>
+  <h2>3. Acceptable Use</h2>
+  <p>You agree not to:</p>
+  <ul>
+    <li>Interfere with normal operation of the App;</li>
+    <li>Reverse engineer, tamper with, or exploit vulnerabilities;</li>
+    <li>Use the App for unlawful or infringing activities.</li>
+  </ul>
 
-      <h2>5. Data and Privacy</h2>
-      <ul>
-        <li>Please refer to our <a href="https://docselflab.github.io/docsLab/CupWaterTracker/privacyPolicy_EN">Privacy Policy</a> for how data is handled.</li>
-        <li>You understand and agree to use HealthKit, local notifications, and the widget (App Group) only within the scope of your authorization.</li>
-      </ul>
+  <h2>4. Subscriptions and In-App Purchases</h2>
+  <ul>
+    <li>
+      Some features are <strong>Cup Water Track Pro</strong> features, available via Apple in-app purchase,
+      including <strong>monthly subscription, yearly subscription, or one-time lifetime purchase</strong>
+      (as shown in the App).
+    </li>
+    <li>
+      Subscriptions automatically renew unless you turn off auto-renew at least 24 hours before the end
+      of the current period in your Apple account subscription settings.
+    </li>
+    <li>
+      Renewal charges are billed to your Apple account within 24 hours before the current period ends.
+    </li>
+    <li>
+      Billing, renewal, cancellation, and refunds are subject to
+      <a href="https://www.apple.com/legal/internet-services/itunes/" target="_blank" rel="noopener">Apple Media Services Terms</a>
+      and applicable law.
+    </li>
+    <li>
+      You can manage or cancel subscriptions in iOS Settings → Apple Account → Subscriptions.
+    </li>
+    <li>
+      You may restore prior Pro purchases in the App using the same Apple ID.
+    </li>
+  </ul>
 
-      <h2>6. Intellectual Property</h2>
-      <p>The App and related materials are protected by intellectual property laws. Unauthorized copying or commercial use is prohibited.</p>
+  <h2>5. Data and Privacy</h2>
+  <ul>
+    <li>
+      Please refer to our
+      <a href="https://docselflab.github.io/docsLab/CupWaterTracker/privacyPolicy_EN">Privacy Policy</a>
+      for how data is handled.
+    </li>
+    <li>
+      You understand and agree to use HealthKit, local notifications, and the widget (App Group)
+      only within the scope of your authorization.
+    </li>
+  </ul>
 
-      <h2>7. Disclaimer</h2>
-      <ul>
-        <li>The App is a wellness habit tool, not medical advice.</li>
-        <li>Hydration goals and statistics are for reference only; adjust based on your personal health needs.</li>
-        <li>Service interruptions or data issues may occur due to device/OS/network/third-party conditions.</li>
-      </ul>
+  <h2>6. Intellectual Property</h2>
+  <p>
+    The App and related materials are protected by intellectual property laws.
+    Unauthorized copying or commercial use is prohibited.
+  </p>
 
-      <h2>8. Limitation of Liability</h2>
-      <p>To the extent permitted by law, we are not liable for indirect, incidental, or consequential damages.</p>
+  <h2>7. Disclaimer</h2>
+  <ul>
+    <li>The App is a wellness habit tool, not medical advice.</li>
+    <li>Hydration goals and statistics are for reference only; adjust based on your personal health needs.</li>
+    <li>
+      Service interruptions or data issues may occur due to device, operating system, network,
+      or third-party conditions. We will use reasonable efforts to fix issues but do not accept
+      unlimited liability.
+    </li>
+  </ul>
 
-      <h2>9. Changes and Termination</h2>
-      <ul>
-        <li>We may update these Terms for legal or business reasons and will announce material changes in the App or on our website.</li>
-        <li>If you do not agree to updates, you must stop using the App.</li>
-      </ul>
+  <h2>8. Limitation of Liability</h2>
+  <p>
+    To the extent permitted by law, we are not liable for indirect, incidental, or consequential damages.
+  </p>
 
-      <h2>10. Governing Law</h2>
-      <p>These Terms are governed by the laws of the People's Republic of China, without regard to conflict-of-law principles.</p>
+  <h2>9. Changes and Termination</h2>
+  <ul>
+    <li>
+      We may update these Terms for legal or business reasons and will announce material changes
+      in the App or on our website.
+    </li>
+    <li>If you do not agree to updates, you must stop using the App.</li>
+  </ul>
 
-      <h2>11. Contact</h2>
-      <p>For support: <a href="mailto:contactworking@163.com">contactworking@163.com</a></p>
+  <h2>10. Governing Law</h2>
+  <p>
+    These Terms are governed by the laws of the <strong>People's Republic of China</strong>,
+    without regard to conflict-of-law principles.
+  </p>
+  <p>
+    Any dispute arising out of or relating to these Terms or your use of the App shall first be resolved
+    through good-faith negotiation. If negotiation fails, either party may bring the dispute before
+    the <strong>competent people's court at the defendant's place of residence in the PRC</strong>.
+  </p>
 
-    </article>
-  </main>
+  <h2>11. Contact</h2>
+  <p>
+    For support: <a href="mailto:contactworking@163.com">contactworking@163.com</a>
+  </p>
+
 </body>
 </html>
