@@ -1,0 +1,161 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>SubTrack Support FAQ</title>
+  <style>
+    :root {
+      color-scheme: light;
+      --bg: #f8fafc;
+      --card: #ffffff;
+      --ink: #0f172a;
+      --muted: #475569;
+      --line: #e2e8f0;
+      --accent: #2563eb;
+    }
+    body {
+      margin: 0;
+      background: var(--bg);
+      color: var(--ink);
+      font: 16px/1.75 -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC", "Hiragino Sans GB", sans-serif;
+    }
+    main {
+      max-width: 880px;
+      margin: 0 auto;
+      padding: 48px 20px;
+    }
+    article {
+      background: var(--card);
+      border: 1px solid var(--line);
+      border-radius: 20px;
+      padding: 40px;
+    }
+    h1 {
+      margin: 0 0 12px;
+      font-size: clamp(2rem, 4vw, 3rem);
+      line-height: 1.15;
+    }
+    h2 {
+      margin: 32px 0 12px;
+      font-size: 1.25rem;
+    }
+    h3 {
+      margin: 24px 0 10px;
+      font-size: 1.05rem;
+    }
+    p {
+      margin: 0 0 16px;
+    }
+    a {
+      color: var(--accent);
+    }
+    .meta {
+      padding: 16px 20px;
+      margin: 0 0 28px;
+      border: 1px solid var(--line);
+      border-radius: 14px;
+      background: #f8fafc;
+      color: var(--muted);
+    }
+    .meta p {
+      margin: 0;
+    }
+    .faq {
+      display: grid;
+      gap: 14px;
+      margin-top: 16px;
+    }
+    .item {
+      padding: 18px 20px;
+      border: 1px solid var(--line);
+      border-radius: 14px;
+      background: #ffffff;
+    }
+    .question {
+      margin: 0 0 8px;
+      font-weight: 700;
+    }
+    .answer {
+      margin: 0;
+      color: var(--muted);
+    }
+    .notice {
+      padding: 16px 20px;
+      border-left: 4px solid var(--accent);
+      border-radius: 12px;
+      background: #eff6ff;
+      color: #1e3a8a;
+    }
+    @media (max-width: 640px) {
+      main {
+        padding: 24px 12px;
+      }
+      article {
+        padding: 24px;
+        border-radius: 16px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <article>
+      <h1>SubTrack Support FAQ</h1>
+      <div class="meta">
+        <p><strong>Support email:</strong> <a href="mailto:contackworking@163.com">contackworking@163.com</a></p>
+        <p><strong>Version:</strong> SubTrack v1.0</p>
+      </div>
+
+      <h2>FAQ</h2>
+      <section class="faq" aria-label="SubTrack English FAQ">
+        <div class="item">
+          <p class="question">Why does the monthly total look wrong?</p>
+          <p class="answer">Amounts are entered manually. Weekly and yearly subscriptions are converted into a monthly equivalent. SubTrack v1.0 does not perform foreign exchange conversion, so mixed-currency totals should be treated as estimates only.</p>
+        </div>
+
+        <div class="item">
+          <p class="question">Why am I not receiving renewal reminders?</p>
+          <p class="answer">Open iOS Settings → Notifications → SubTrack and allow notifications. Also make sure renewal reminders are enabled for the subscription inside SubTrack.</p>
+        </div>
+
+        <div class="item">
+          <p class="question">How many subscriptions can I add?</p>
+          <p class="answer">SubTrack v1.0 has no subscription count limit.</p>
+        </div>
+
+        <div class="item">
+          <p class="question">Can SubTrack connect to my bank?</p>
+          <p class="answer">No. SubTrack does not connect to banks, cards, payment accounts, emails, receipts, or billing statements. All subscription records are entered manually.</p>
+        </div>
+      </section>
+
+      <h2>Important Notice</h2>
+      <p class="notice">SubTrack is a personal subscription tracking tool. It is not a bank, financial institution, payment service, accounting service, or investment adviser. Amounts and renewal dates are manually entered by users and are provided for personal reference only.</p>
+
+      <h2>中文常见问题</h2>
+      <section class="faq" aria-label="SubTrack 中文 FAQ">
+        <div class="item">
+          <p class="question">月合计不对？</p>
+          <p class="answer">金额为手动填写；年/周订阅会折算为月等价。SubTrack v1.0 不做汇率换算，多币种混合合计仅适合作为估算参考。</p>
+        </div>
+
+        <div class="item">
+          <p class="question">收不到续费提醒？</p>
+          <p class="answer">请在 iOS 设置 → 通知 → SubTrack 中允许通知，并在添加或编辑订阅时开启“续费提醒”。</p>
+        </div>
+
+        <div class="item">
+          <p class="question">能加多少条订阅？</p>
+          <p class="answer">SubTrack v1.0 无数量限制。</p>
+        </div>
+
+        <div class="item">
+          <p class="question">能连银行吗？</p>
+          <p class="answer">不能。SubTrack 不连接银行，也不读取邮件账单。所有订阅信息都需要用户手动录入。</p>
+        </div>
+      </section>
+    </article>
+  </main>
+</body>
+</html>
