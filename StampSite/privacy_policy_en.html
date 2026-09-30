@@ -20,18 +20,19 @@
 
   <h2>1. Data processed on your device</h2>
   <ul>
-    <li><strong>Photos and stamps.</strong> Photos you capture (or import from your library) and the watermark information burned into them: date and time, GPS coordinates, altitude, heading, reverse-geocoded address, weather, and any custom text or logo you configure.</li>
+    <li><strong>Photos and stamps.</strong> Photos you capture (or import from your library) and the watermark information burned into them: date and time, GPS coordinates, altitude, heading, reverse-geocoded address, weather, and any custom text or logo you configure. When a stamped photo is saved, location and related fields may also be written into the photo file's metadata (EXIF/GPS).</li>
     <li><strong>Projects.</strong> Project names, photo captions, and per-photo metadata you see in the app, stored locally on your device (SwiftData and files in the app's own storage).</li>
     <li><strong>Watermark settings.</strong> Your template, layout, units, and toggle preferences, stored locally.</li>
   </ul>
 
   <h2>2. Location</h2>
-  <p>If you grant Location (When In Use) access, StampSite reads your GPS position to place location information on stamps. You can also pick a location manually on the map; in that case the stamp is labeled "Manual" and your real position is not used. Location data is used on device only and is never uploaded by us. Revoking location access only removes location text from stamps; the rest of the app keeps working.</p>
+  <p>If you grant Location (When In Use) access, StampSite reads your GPS position to place location information on stamps. You can also pick a location manually on the map; in that case the stamp is labeled "Manual" and your real position is not used. Location data is used on device only and is never uploaded by us to a StampSite server. Limited location data may be sent to Apple or Open-Meteo solely to build optional stamp fields, as described in section 3. Revoking location access only removes location-related stamp fields; the rest of the app keeps working.</p>
 
   <h2>3. Network requests (what leaves your device)</h2>
-  <p>StampSite sends a very small amount of data to the following services, only to build the stamp. No photos, project names, custom text, or identifiers are ever transmitted.</p>
+  <p>StampSite sends a very small amount of data to the following services, only to build the stamp. No photos, project names, custom text, or advertising identifiers are ever transmitted by us.</p>
   <ul>
-    <li><strong>Weather — Open-Meteo (api.open-meteo.com).</strong> When the weather stamp is enabled, the app sends your approximate coordinates, rounded to two decimal places (roughly a 1 km area), to request current temperature and conditions. The request contains no account, device, or advertising identifiers, and Open-Meteo's API works without registration.</li>
+    <li><strong>Weather — Open-Meteo (api.open-meteo.com), with Apple WeatherKit fallback.</strong> When the weather stamp is enabled, the app first sends your approximate coordinates, rounded to two decimal places (roughly a 1 km area), to Open-Meteo to request current temperature and conditions. That request contains no account, device, or advertising identifiers, and Open-Meteo's API works without registration. If Open-Meteo is unavailable, the app falls back to Apple WeatherKit, which receives the location for the weather lookup under Apple's privacy terms.</li>
+    <li><strong>Map snapshot — Apple MapKit.</strong> When a map is shown on the stamp, the app uses Apple MapKit to generate a map image for those coordinates. Map tile and snapshot requests are handled by Apple under Apple's privacy terms.</li>
     <li><strong>Network time — apple.com.</strong> When "network time" is enabled, the app makes a lightweight request to a public Apple endpoint and reads only the HTTP <em>Date</em> response header, to guard against a wrong device clock. No content is uploaded.</li>
     <li><strong>Reverse geocoding — Apple.</strong> Street addresses for stamps are resolved through Apple's built-in geocoding service, governed by Apple's own privacy terms.</li>
   </ul>
@@ -47,8 +48,9 @@
   <h2>5. Permissions</h2>
   <ul>
     <li><strong>Camera</strong> — required to capture stamped photos.</li>
-    <li><strong>Location (When In Use)</strong> — optional; adds coordinates, address, and weather to stamps.</li>
-    <li><strong>Photos (Add Only)</strong> — optional; used to save stamped photos into your photo library and to let you import existing photos for stamping. The app cannot browse or modify your existing library content beyond the photo you pick.</li>
+    <li><strong>Location (When In Use)</strong> — optional; adds coordinates, address, weather, and map to stamps.</li>
+    <li><strong>Photos (Add Only)</strong> — optional; used when "Save also to Photos" is on, to write stamped photos into your photo library.</li>
+    <li><strong>Photos (library access)</strong> — optional. Importing a photo to stamp uses the system photo picker, which shares only the image you select. Choosing a watermark logo may request broader Photos library access so you can pick an image from your library. The app does not upload library content.</li>
   </ul>
   <p class="note">You can revoke any permission at any time in iOS Settings › StampSite.</p>
 
@@ -56,7 +58,7 @@
   <p>Everything is stored locally. Deleting a photo or project inside the app removes it. Uninstalling the app deletes all locally stored data.</p>
 
   <h2>7. Children</h2>
-  <p>StampSite is not directed at children under 13 and does not knowingly collect personal information from anyone, since no personal data is collected.</p>
+  <p>StampSite is not directed at children under 13 and does not knowingly collect personal information from children. The app has no accounts and does not operate its own data servers.</p>
 
   <h2>8. Changes</h2>
   <p>If our data practices ever change (for example, if optional cloud backup is introduced), we will update this policy in the app and on our App Store listing before the change takes effect.</p>
