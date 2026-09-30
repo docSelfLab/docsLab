@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>StampSite Privacy Policy</title>
+  <style>
+    body { font-family: -apple-system, BlinkMacSystemFont, sans-serif; margin: 20px; color: #141414; line-height: 1.55; }
+    h1 { font-size: 22px; }
+    h2 { font-size: 17px; margin-top: 26px; }
+    p, li { font-size: 15px; color: #333; }
+    .note { font-size: 13px; color: #666; }
+  </style>
+</head>
+<body>
+  <h1>Privacy Policy</h1>
+  <p><strong>StampSite</strong> · Last updated: September 30, 2026</p>
+
+  <p>StampSite is a camera and watermarking tool that records the time, location, and weather conditions on your photos. This policy explains what data the app processes and why. The short version: <strong>your photos and projects stay on your device</strong>. StampSite has no user accounts and no photo servers.</p>
+
+  <h2>1. Data processed on your device</h2>
+  <ul>
+    <li><strong>Photos and stamps.</strong> Photos you capture (or import from your library) and the watermark information burned into them: date and time, GPS coordinates, altitude, heading, reverse-geocoded address, weather, and any custom text or logo you configure.</li>
+    <li><strong>Projects.</strong> Project names, photo captions, and per-photo metadata you see in the app, stored locally on your device (SwiftData and files in the app's own storage).</li>
+    <li><strong>Watermark settings.</strong> Your template, layout, units, and toggle preferences, stored locally.</li>
+  </ul>
+
+  <h2>2. Location</h2>
+  <p>If you grant Location (When In Use) access, StampSite reads your GPS position to place location information on stamps. You can also pick a location manually on the map; in that case the stamp is labeled "Manual" and your real position is not used. Location data is used on device only and is never uploaded by us. Revoking location access only removes location text from stamps; the rest of the app keeps working.</p>
+
+  <h2>3. Network requests (what leaves your device)</h2>
+  <p>StampSite sends a very small amount of data to the following services, only to build the stamp. No photos, project names, custom text, or identifiers are ever transmitted.</p>
+  <ul>
+    <li><strong>Weather — Open-Meteo (api.open-meteo.com).</strong> When the weather stamp is enabled, the app sends your approximate coordinates, rounded to two decimal places (roughly a 1 km area), to request current temperature and conditions. The request contains no account, device, or advertising identifiers, and Open-Meteo's API works without registration.</li>
+    <li><strong>Network time — apple.com.</strong> When "network time" is enabled, the app makes a lightweight request to a public Apple endpoint and reads only the HTTP <em>Date</em> response header, to guard against a wrong device clock. No content is uploaded.</li>
+    <li><strong>Reverse geocoding — Apple.</strong> Street addresses for stamps are resolved through Apple's built-in geocoding service, governed by Apple's own privacy terms.</li>
+  </ul>
+
+  <h2>4. What we do not do</h2>
+  <ul>
+    <li>We do not create user accounts.</li>
+    <li>We do not upload your photos or project data to any StampSite server — we do not operate one.</li>
+    <li>We do not use analytics, advertising SDKs, or third-party trackers.</li>
+    <li>We do not sell or share personal data.</li>
+  </ul>
+
+  <h2>5. Permissions</h2>
+  <ul>
+    <li><strong>Camera</strong> — required to capture stamped photos.</li>
+    <li><strong>Location (When In Use)</strong> — optional; adds coordinates, address, and weather to stamps.</li>
+    <li><strong>Photos (Add Only)</strong> — optional; used to save stamped photos into your photo library and to let you import existing photos for stamping. The app cannot browse or modify your existing library content beyond the photo you pick.</li>
+  </ul>
+  <p class="note">You can revoke any permission at any time in iOS Settings › StampSite.</p>
+
+  <h2>6. Data retention and deletion</h2>
+  <p>Everything is stored locally. Deleting a photo or project inside the app removes it. Uninstalling the app deletes all locally stored data.</p>
+
+  <h2>7. Children</h2>
+  <p>StampSite is not directed at children under 13 and does not knowingly collect personal information from anyone, since no personal data is collected.</p>
+
+  <h2>8. Changes</h2>
+  <p>If our data practices ever change (for example, if optional cloud backup is introduced), we will update this policy in the app and on our App Store listing before the change takes effect.</p>
+
+  <h2>Contact</h2>
+  <p>Questions or requests: open <em>Feedback</em> inside StampSite (Settings › Feedback), or email <a href="mailto:contactworking@163.com">contactworking@163.com</a>.</p>
+</body>
+</html>
