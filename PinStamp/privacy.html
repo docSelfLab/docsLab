@@ -23,17 +23,17 @@
   <p>Content you create is stored mainly <strong>on your device</strong>, including:</p>
   <ul>
     <li>Map pins / saved places (name, coordinates, address, notes, and similar fields)</li>
-    <li>The currently selected place (used by Map, Weather, Camera, and photo geotag), which may include GPS altitude when available</li>
+    <li>The currently selected place (used by Map, Weather, and Camera), which may include GPS altitude when available</li>
     <li>In-app indexes for stamped photos</li>
-    <li>Preferences (for example stamp style, overlay place text when writing GPS)</li>
+    <li>Preferences (for example stamp style)</li>
   </ul>
   <p>The App contains <strong>no subscriptions, no in-app purchases, and no advertising</strong>. Data stays on device by default and is shared via an App Group snapshot so the Home Screen widget can show your latest place. This version does <strong>not</strong> upload your place list to a first-party cloud backup service.</p>
 
   <h2>2. System permissions</h2>
   <ul>
-    <li><strong>Location (When In Use)</strong>: center the map on your current position, read GPS altitude when available, weather for “my location,” and related photo GPS. We do not request Always location and do not track you in the background.</li>
+    <li><strong>Location (When In Use)</strong>: center the map on your current position, read GPS altitude when available, and show weather for “my location.” We do not request Always location and do not track you in the background.</li>
     <li><strong>Camera</strong>: stamped photo capture.</li>
-    <li><strong>Photo Library</strong>: read photos you choose for GPS editing or related processing; writes are <strong>new copies</strong> and do not overwrite originals you did not choose to change. If overlay place text is enabled, that text is burned into the copy’s pixels.</li>
+    <li><strong>Photo Library</strong> (add-only): save stamped photos to your library as <strong>new copies</strong>. The App does not read your existing photos and does not write to, edit, or remove GPS metadata from any photo. Place and time text is burned into the copy’s pixels.</li>
   </ul>
   <p>You can revoke these permissions in iOS Settings at any time. Features that need a permission will stop working; others (such as dropping a pin manually) remain available.</p>
 
@@ -48,6 +48,7 @@
   <h2>5. What we do not do</h2>
   <ul>
     <li>We do not change iPhone system location or provide fake GPS to other apps</li>
+    <li>We do not write to, edit, or remove GPS metadata from photos</li>
     <li>We do not use third-party advertising or analytics SDKs in this version</li>
     <li>We do not send marketing push notifications in this version</li>
   </ul>
