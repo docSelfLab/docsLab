@@ -6,7 +6,7 @@
 <title>QRSnap Privacy Policy</title>
 <style>
   :root{
-    --brand:#2563EB; --brand-light:#3B82F6;
+    --brand:#0F766E; --brand-light:#14B8A6; --seal:#E11D48;
     --bg:#F8FAFC; --surface:#FFFFFF;
     --text:#0F172A; --muted:#475569; --dim:#94A3B8;
     --border:#E2E8F0;
@@ -23,7 +23,7 @@
     color:#fff; border-radius:18px; padding:34px 28px; margin-bottom:28px;
   }
   header.hero .logo{display:flex; align-items:center; gap:10px; font-size:26px; font-weight:700; letter-spacing:.5px;}
-  header.hero .logo .dot{width:12px;height:12px;border-radius:50%;background:#fff;box-shadow:0 0 0 4px rgba(255,255,255,.25);}
+  header.hero .logo .dot{width:12px;height:12px;border-radius:50%;background:var(--seal);box-shadow:0 0 0 4px rgba(255,255,255,.25);}
   header.hero p{margin:10px 0 0; opacity:.92; font-size:15px;}
   h1{font-size:24px; margin:0 0 4px;}
   h2{font-size:19px; margin:34px 0 10px; padding-left:12px; border-left:4px solid var(--brand);}
@@ -31,7 +31,7 @@
   p,li{color:var(--text);}
   .meta{color:var(--muted); font-size:14px; margin-top:6px;}
   .card{background:var(--surface); border:1px solid var(--border); border-radius:14px; padding:18px 22px; margin:16px 0;}
-  .callout{background:#EFF6FF; border:1px solid #BFDBFE; border-radius:12px; padding:14px 18px; color:#1E3A8A; font-size:15px;}
+  .callout{background:#ECFDF5; border:1px solid #A7F3D0; border-radius:12px; padding:14px 18px; color:#065F46; font-size:15px;}
   ul{padding-left:22px;}
   li{margin:6px 0;}
   code{background:#F1F5F9; padding:2px 6px; border-radius:6px; font-size:14px;}
@@ -57,10 +57,10 @@
     <p>Privacy Policy</p>
   </header>
 
-  <p class="meta">Last updated: November 2, 2026　|　Effective: November 2, 2026</p>
+  <p class="meta">Last updated: November 19, 2026　|　Effective: November 19, 2026</p>
 
   <div class="callout">
-    <b>In one sentence:</b> QRSnap collects no personal data from you and does not track you. Scanning and generation stay on your device and are not sent to the developer. If you choose to open a link or hand a result to another app, iOS completes that action.
+    <b>In one sentence:</b> QRSnap collects no personal data from you and does not track you. Scanning, design, Nearby helpers, and Share Extension handoffs stay on your device and are not sent to the developer. If you choose to open a link or hand a result to another app, iOS completes that action.
   </div>
 
   <nav class="toc">
@@ -77,8 +77,8 @@
   </nav>
 
   <h2 id="overview">Overview</h2>
-  <p>QRSnap (the "App") is a fully free, no-in-app-purchase, no-ads, completely offline QR code and barcode scanner and generator. In this policy, "we" and the "Operator" mean the developer who publishes the App.</p>
-  <p>Our privacy principle is simple: <b>we do not collect any personal data from you, and we do not track you.</b> Scanning and generation run on your device. The Operator does not receive that information. This policy explains how information is handled when you use the App, including data that stays on your device and actions you choose to hand to iOS or another app.</p>
+  <p>QRSnap (the "App"), is a fully free, no-in-app-purchase, no-ads, offline-first QR code and barcode design studio with scanning, history, Share Extension, and Nearby helpers. In this policy, "we" and the "Operator" mean the developer who publishes the App.</p>
+  <p>Our privacy principle is simple: <b>we do not collect any personal data from you, and we do not track you.</b> Features run on your device. The Operator does not receive that information. This policy explains how information is handled when you use the App, including data that stays on your device and actions you choose to hand to iOS or another app.</p>
 
   <h2 id="collect">1. Information We Collect</h2>
   <div class="card">
@@ -86,10 +86,10 @@
     <p>Specifically, the App does not collect or transmit any of the following:</p>
     <ul>
       <li>Identity information such as name, email address, or phone number;</li>
-      <li>Precise or coarse location information;</li>
+      <li>Precise or coarse location information to the Operator;</li>
       <li>Device identifiers (such as IDFA or any hardware serial number);</li>
       <li>Usage data, analytics, or diagnostic logs;</li>
-      <li>Photos, contacts, calendar events, or other sensitive content.</li>
+      <li>Photos, contacts, calendar events, Wi‑Fi credentials, Bluetooth scan results, or other sensitive content.</li>
     </ul>
     <p>With your permission, the App may read some of these categories <b>on your device</b> to complete an action you start (see Section 2). That information is not transmitted to the Operator, so it is not data we collect.</p>
     <p style="margin-bottom:0;">This is consistent with the App's privacy nutrition label submitted to the App Store: we declare <b>No Data Collected</b> and <b>Tracking = No</b>.</p>
@@ -108,23 +108,26 @@
   <h3>Calendar</h3>
   <p>Used only when you choose to add a scanned calendar event to Calendar. Event details stay on your device and are <b>not uploaded</b>.</p>
   <h3>Location (when in use)</h3>
-  <p>Used only when you choose to fill coordinates from your current position while creating a location QR code. The App does not request background location, and coordinates are <b>not uploaded</b>.</p>
-  <h3>Wi-Fi configuration</h3>
-  <p>Used only when you choose to join a scanned Wi-Fi network. The App hands the network name and password to iOS so the system can connect. Those credentials are <b>not uploaded</b> to the Operator.</p>
-  <p>The App does not request microphone, health, or tracking permissions.</p>
+  <p>Used only when you choose to: (1) read the <b>current Wi‑Fi network name</b> for Nearby / setup QR codes (required by iOS), or (2) fill coordinates while creating a location QR code. The App does not request background location, and location or SSID values are <b>not uploaded</b>.</p>
+  <h3>Wi‑Fi / Hotspot configuration</h3>
+  <p>Used to read the current network name for setup QR codes, and when you choose to join a scanned or created Wi‑Fi network. The App hands the network name and password to iOS so the system can connect. Those credentials are <b>not uploaded</b> to the Operator. iOS does not allow ordinary apps to list nearby Wi‑Fi networks; the App only supports the current network plus manual entry.</p>
+  <h3>Bluetooth</h3>
+  <p>Used only in the Nearby tab to discover nearby Bluetooth Low Energy advertisements in short scan windows so you can view and copy device information (and optionally create an information QR). Scan results stay on your device and are <b>not uploaded</b>. Bluetooth is not used for advertising ID tracking.</p>
+  <p>The App does not request microphone, health, or App Tracking Transparency permissions.</p>
 
   <h2 id="storage">3. Local Data Storage</h2>
   <ul>
-    <li>Records you scan and generate are saved in a <b>database on your device (Apple SwiftData)</b> to power the "History" feature;</li>
-    <li>A copy of a code you pin may be stored in an <b>App Group on your device</b> so the Home Screen Widget can display it. That copy is not synced to a server;</li>
+    <li>Records you scan and generate are saved in a <b>database on your device (Apple SwiftData)</b> to power History;</li>
+    <li>A copy of a code you pin may be stored in an <b>App Group on your device</b> so the Home Screen Widget can display it;</li>
+    <li>Content you send through the <b>Share Extension</b> is written to the same App Group only long enough to open Create on the main App; it is not synced to a server;</li>
     <li>Appearance and scan-feedback preferences are stored in Apple <code>UserDefaults</code> on your device;</li>
-    <li>This data <b>exists only on your device</b>, is never synced to any cloud server, and is never read by the Operator;</li>
+    <li>This data <b>exists only on your device</b>, is never synced to any cloud server of the Operator, and is never read by the Operator;</li>
     <li>You can delete individual entries or clear all history at any time within the App; uninstalling the App permanently removes this local data.</li>
   </ul>
 
   <h2 id="network">4. Network &amp; Third Parties</h2>
   <ul>
-    <li>The App <b>does not connect to the Operator's servers</b> and does not send your scans, generated codes, photos, contacts, calendar events, location, or Wi-Fi credentials to the Operator or to an analytics provider;</li>
+    <li>The App <b>does not connect to the Operator's servers</b> and does not send your scans, generated codes, photos, contacts, calendar events, location, Wi‑Fi credentials, or Bluetooth results to the Operator or to an analytics provider;</li>
     <li>The App <b>contains no advertising SDK, analytics/statistics SDK, crash-reporting SDK,</b> or any other third-party library that collects data;</li>
     <li>When you choose to open a link, map, email, phone number, or message, iOS hands that content to the browser or the relevant app. The App only provides a <b>local safety heuristic</b> for links (distinguishing HTTP/HTTPS and warning on suspicious links). It does not fetch or report the destination itself.</li>
   </ul>
@@ -141,6 +144,8 @@
   <h2 id="contact">8. Contact Us</h2>
   <p>If you have any questions about this privacy policy, please contact the Operator at:</p>
   <p>Email: <a href="mailto:contactkworking@163.com">contactkworking@163.com</a></p>
+
+  <footer>QRSnap — offline QR &amp; barcode studio</footer>
 
 </div>
 </body>

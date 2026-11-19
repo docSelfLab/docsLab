@@ -6,7 +6,7 @@
 <title>QRSnap Terms of Service</title>
 <style>
   :root{
-    --brand:#2563EB; --brand-light:#3B82F6;
+    --brand:#0F766E; --brand-light:#14B8A6; --seal:#E11D48;
     --bg:#F8FAFC; --surface:#FFFFFF;
     --text:#0F172A; --muted:#475569; --dim:#94A3B8;
     --border:#E2E8F0;
@@ -23,7 +23,7 @@
     color:#fff; border-radius:18px; padding:34px 28px; margin-bottom:28px;
   }
   header.hero .logo{display:flex; align-items:center; gap:10px; font-size:26px; font-weight:700; letter-spacing:.5px;}
-  header.hero .logo .dot{width:12px;height:12px;border-radius:50%;background:#fff;box-shadow:0 0 0 4px rgba(255,255,255,.25);}
+  header.hero .logo .dot{width:12px;height:12px;border-radius:50%;background:var(--seal);box-shadow:0 0 0 4px rgba(255,255,255,.25);}
   header.hero p{margin:10px 0 0; opacity:.92; font-size:15px;}
   h1{font-size:24px; margin:0 0 4px;}
   h2{font-size:19px; margin:34px 0 10px; padding-left:12px; border-left:4px solid var(--brand);}
@@ -31,7 +31,7 @@
   p,li{color:var(--text);}
   .meta{color:var(--muted); font-size:14px; margin-top:6px;}
   .card{background:var(--surface); border:1px solid var(--border); border-radius:14px; padding:18px 22px; margin:16px 0;}
-  .callout{background:#EFF6FF; border:1px solid #BFDBFE; border-radius:12px; padding:14px 18px; color:#1E3A8A; font-size:15px;}
+  .callout{background:#ECFDF5; border:1px solid #A7F3D0; border-radius:12px; padding:14px 18px; color:#065F46; font-size:15px;}
   ul{padding-left:22px;}
   li{margin:6px 0;}
   code{background:#F1F5F9; padding:2px 6px; border-radius:6px; font-size:14px;}
@@ -57,10 +57,10 @@
     <p>Terms of Service</p>
   </header>
 
-  <p class="meta">Last updated: November 2, 2026　|　Effective: November 2, 2026</p>
+  <p class="meta">Last updated: November 19, 2026　|　Effective: November 19, 2026</p>
 
   <div class="callout">
-    <b>Please read carefully:</b> By downloading or using QRSnap, you agree to all terms of this Agreement. The App is completely free, with no in-app purchases, no ads, and offline operation.
+    <b>Please read carefully:</b> By downloading or using QRSnap, you agree to all terms of this Agreement. The App is completely free, with no in-app purchases, no ads, and offline-first operation.
   </div>
 
   <nav class="toc">
@@ -82,11 +82,13 @@
   <p>This Terms of Service (the "Agreement") is a legal agreement between you and the developer who publishes the QRSnap application (the "App" and the "Operator"). By downloading, installing, or using the App, you acknowledge that you have read, understood, and agree to be bound by this Agreement. If you do not agree with any part of this Agreement, do not use the App.</p>
 
   <h2 id="service">2. Description of Service</h2>
-  <p>The App is a QR code and barcode tool that primarily provides the following features:</p>
+  <p>The App is an offline-first QR code and barcode studio that primarily provides:</p>
   <ul>
-    <li><b>Scan</b>: recognize QR codes / barcodes in real time via camera, or from images in your photo library;</li>
-    <li><b>Create</b>: generate QR codes / barcodes for URLs, Wi-Fi, contact cards, email, phone, text, location, calendar events, and more, with customizable styles and export;</li>
-    <li><b>History</b>: store and manage your scanned and created records locally on your device;</li>
+    <li><b>Design &amp; Create</b>: generate QR codes / barcodes for URLs, Wi‑Fi, contact cards, email, phone, text, location, calendar events, and more, with a style atelier (colors, logo, frames, error correction) and export;</li>
+    <li><b>Share Extension</b>: receive URL or text from other apps via the system Share sheet to prefill Create on your device;</li>
+    <li><b>Scan</b>: recognize QR codes / barcodes in real time via camera, or from images in your photo library, including batch scanning;</li>
+    <li><b>Nearby</b>: helpers for the current Wi‑Fi network (setup QR via the same Create flow) and short Bluetooth discovery windows for nearby BLE advertisements (copy device info; optional information QR — not a pairing or network-listing tool beyond iOS capabilities);</li>
+    <li><b>History</b>: store and manage scanned and created records locally on your device;</li>
     <li><b>Widget</b>: pin frequently used QR codes to the Home Screen;</li>
     <li>A <b>local safety hint</b> on scanned URLs (distinguishing HTTP/HTTPS and warning on suspicious links).</li>
   </ul>
@@ -101,6 +103,7 @@
     <li>Use the App for any unlawful, fraudulent, harassing, or rights-infringing purpose;</li>
     <li>Generate or distribute QR codes / barcodes containing malicious, phishing, unlawful, or infringing content;</li>
     <li>Attempt to circumvent, disrupt, or interfere with the App's or its underlying systems' security mechanisms;</li>
+    <li>Use Nearby Wi‑Fi or Bluetooth helpers to harass others or to collect identifiers for tracking people;</li>
     <li>Commercially redistribute, rent, or resell the App.</li>
   </ul>
   <p>All legal responsibility arising from your use of the App—especially the content you generate or scan—rests solely with you.</p>
@@ -111,6 +114,7 @@
     <ul>
       <li><b>Truthfulness of scanned content</b>: the content a code points to is the responsibility of the code's provider; the Operator is not responsible for its truthfulness, legality, or safety;</li>
       <li><b>Limitations of the link safety hint</b>: the HTTP/HTTPS indicator and "suspicious link" warning are <b>local heuristics</b> and are not guaranteed to be accurate; whether to open a link, and any risk arising from doing so, is your own decision and responsibility;</li>
+      <li><b>Wi‑Fi &amp; Bluetooth helpers</b>: reading the current SSID, joining a network, and BLE discovery depend on iOS APIs, device state, and user permissions; results may be incomplete or unavailable (for example, iOS does not provide a nearby Wi‑Fi list to ordinary apps). Joining a network and any network access that follows are your responsibility;</li>
       <li><b>Responsibility for generated content</b>: the QR content you generate is entirely your responsibility; the Operator does not review or endorse it;</li>
       <li><b>Availability</b>: the Operator does not warrant that the App will be uninterrupted or error-free on all devices or scenarios, nor that recognition is 100% accurate.</li>
     </ul>
@@ -118,7 +122,7 @@
   </div>
 
   <h2 id="ip">6. Intellectual Property</h2>
-  <p>The "QRSnap" name, logo, interface design, and underlying code are intellectual property of the Operator, protected by applicable copyright laws. The specific QR content you generate belongs to you or the relevant content provider (as applicable); you grant the Operator only the temporary, local processing rights necessary to provide the service.</p>
+  <p>The "QRSnap" name, logo (including the Celadon Ink visual identity), interface design, and underlying code are intellectual property of the Operator, protected by applicable copyright laws. The specific QR content you generate belongs to you or the relevant content provider (as applicable); you grant the Operator only the temporary, local processing rights necessary to provide the service.</p>
 
   <h2 id="thirdparty">7. Third-Party Links &amp; Content</h2>
   <p>When you open external links or invoke other Apps through the App, the related websites or services are operated by third parties and are not governed by this Agreement or the App's Privacy Policy. Please review the third parties' own terms and policies.</p>
@@ -135,6 +139,8 @@
   <h2 id="contact">11. Contact Us</h2>
   <p>If you have any questions about this Agreement, please contact the Operator at:</p>
   <p>Email: <a href="mailto:contactkworking@163.com">contactkworking@163.com</a></p>
+
+  <footer>QRSnap — offline QR &amp; barcode studio</footer>
 
 </div>
 </body>
